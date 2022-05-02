@@ -13,8 +13,8 @@ def generate_password():
     special_chars = string.punctuation
     password_length = random.randint(8, 16)
 
-    useFor = lower_case + upper_case + numbers + special_chars
-    password = "".join(random.sample(useFor, password_length))
+    characters = lower_case + upper_case + numbers + special_chars
+    password = "".join(random.sample(characters, password_length))
     return password
 
 
